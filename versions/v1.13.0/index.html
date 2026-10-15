@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>灵犀 AI · AI Sales OS</title>
+  <meta name="description" content="面向企业销售全生命周期的 AI 智能平台" />
+  <link rel="stylesheet" href="styles.css?v=1.13.0" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">灵</span><div><b>灵犀 AI</b><small>AI SALES OS</small></div></div>
+      <nav id="nav"></nav>
+      <div class="sidebar-foot"><div class="avatar">陈</div><div><b>陈晨</b><small>超级管理员</small></div><button aria-label="更多">•••</button></div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div><button class="mobile-menu" id="mobileMenu">☰</button><span class="crumb" id="crumb">产品预览 / 移动端助手</span></div>
+        <div class="top-actions"><span class="version-badge">Latest · v1.13.0</span><a class="ghost version-link" href="versions/">版本历史</a><button class="search">⌕　搜索客户、会话或知识 <kbd>⌘ K</kbd></button><button class="icon-btn" aria-label="通知">◔<i></i></button></div>
+      </header>
+      <section id="content"></section>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <div id="actionModal" class="modal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <header><h2 id="modalTitle"></h2><button data-close-modal aria-label="关闭">×</button></header>
+      <div class="modal-body"></div>
+      <footer><button class="btn light" data-close-modal>取消</button><button class="btn primary" data-confirm>确认</button></footer>
+    </section>
+  </div>
+  <script src="app.js?v=1.13.0"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

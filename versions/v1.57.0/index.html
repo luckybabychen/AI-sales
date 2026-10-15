@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>灵犀 AI · AI Sales OS</title>
+  <meta name="description" content="面向企业销售全生命周期的 AI 智能平台" />
+  <script>tailwind={config:{corePlugins:{preflight:false}}}</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css?v=1.57.0" />
+  <link rel="stylesheet" href="conversation-trace.css?v=1.57.0" />
+  <link rel="stylesheet" href="session-data.css?v=1.57.0" />
+  <link rel="stylesheet" href="ai-call-records.css?v=1.57.0" />
+  <link rel="stylesheet" href="scene-strategy.css?v=1.57.0" />
+  <link rel="stylesheet" href="knowledge-readonly.css?v=1.57.0" />
+  <link rel="stylesheet" href="customer-management.css?v=1.57.0" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">灵</span><div><b>灵犀 AI</b><small>AI SALES OS</small></div></div>
+      <nav id="nav"></nav>
+      <div class="account-menu" id="accountMenu" hidden><button id="confirmLogout"><span>↪</span>退出登录</button></div>
+      <div class="sidebar-foot"><div class="avatar">陈</div><div><b>陈晨</b></div><button id="logoutButton" aria-label="账号操作" title="账号操作">•••</button></div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div><button class="mobile-menu" id="mobileMenu">☰</button><span class="crumb" id="crumb">销售工作台 / 移动销售助手</span></div>
+        <div class="top-actions"><span class="version-badge">Latest · v1.57.0</span><a class="ghost version-link" href="versions/">版本历史</a><button class="search">⌕　搜索客户、会话或知识 <kbd>⌘ K</kbd></button><button class="icon-btn" aria-label="通知">◔<i></i></button></div>
+      </header>
+      <section id="content"></section>
+    </main>
+  </div>
+  <section id="logoutScreen" class="logout-screen" hidden>
+    <div class="logout-card"><span class="brand-mark">灵</span><small>LINGXI AI SALES OS</small><h1>已安全退出</h1><p>当前后台会话已结束，需要重新登录后继续访问。</p><button class="btn primary" id="loginAgain">重新登录</button></div>
+  </section>
+  <div id="toast" class="toast"></div>
+  <div id="actionModal" class="modal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <header><h2 id="modalTitle"></h2><button data-close-modal aria-label="关闭">×</button></header>
+      <div class="modal-body"></div>
+      <footer><button class="btn light" data-close-modal>取消</button><button class="btn primary" data-confirm>确认</button></footer>
+    </section>
+  </div>
+  <script src="metric-details.js?v=1.57.0"></script>
+  <script src="conversation-trace.js?v=1.57.0"></script>
+  <script src="session-data.js?v=1.57.0"></script>
+  <script src="ai-call-records.js?v=1.57.0"></script>
+  <script src="scene-strategy.js?v=1.57.0"></script>
+  <script src="knowledge-readonly.js?v=1.57.0"></script>
+  <script src="customer-management.js?v=1.57.0"></script>
+  <script src="app.js?v=1.57.0"></script>
+  <script src="dashboard-effects.js?v=1.57.0"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
